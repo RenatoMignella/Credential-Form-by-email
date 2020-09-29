@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Credencial Membro  </title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+ 
+</head>
+
+    <header>
+        <div class="caixa">
+            <h1 > <img src=""> </h1>
+            
+            </div>
+            </header>
+    </header>
+<body>
+    <section class="container">
+        <h2 id="titulo-form">Requisição de Credencial de Membro</h2>
+        <form  id="form-envia" >
+            <div class="grupo">
+                <label for="nome">Nome Completo:</label>
+                <input id="nome" name="nome" required="" type="text" placeholder="Digite o seu Nome" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="telefone">Telefone:</label>
+                <input id="telefone" name="telefone" type="text" placeholder="Digite o Tel" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="registation">Data de Batismo.:</label>
+                <input id="registro" name="registation" type="text" placeholder="Digite a data de Batismo" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="Pais">Pais</label>
+                <input id="pais" type="text" placeholder="Digite o Pais de origem" class="campo campo-medio">
+            </div>
+           </div>
+            <div class="grupo">
+                <label for="Congregacao">Congregação</label>
+                <input id="congregacao" type="text" placeholder="Congregação" class="campo campo-medio">
+            </div>
+           </div>
+            <div class="grupo">
+                <label for="Endereço">Endereço</label>
+                <input id="endereco" type="text" placeholder="Digite o Endereço" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="nacionalidade">Nacionalidade</label>
+                <input id="nacionalidade" type="text" placeholder="Nacionalidade" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="lugardebatismo">Lugar de Batismo</label>
+                <input id="lugar" type="text" placeholder="Lugar de Batismo" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="Pais">Nome do Pai</label>
+                <input id="pai" type="text" placeholder="Digite o Nome do Pai" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="Pais">Nome da mãe</label>
+                <input id="mae" type="text" placeholder="Digite o Nome da Mãe " class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="estado">Estado Civil</label>
+                <input id="estadocivil" type="text" placeholder="Digite o Estado Civil" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="cargo">Cargo</label>
+                <input id="cargo" type="text" placeholder="Digite o cargo Ex: membro ,cooperador" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="Digite o Email" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="lider">Lider Requisitante</label>
+                <input id="lider1" type="text" required="" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="nascimento">Data de Nascimento:</label>
+                <input id="nascimento" type="text" placeholder="Digite o Nascinmento"required="" class="campo campo-medio">
+            </div>
+              
+                 <legend>O Cadastrado preenche os Requisitos abaixo?  <br>
+    
+                        <br> &#9989; Ter 3 meses de frequencia na Igreja e Ser bastizado(a).&#9989;  <br>
+                        <br>     
+                       <div class="grupo">
+    
+                       <label for="confirmacao">Confirmação</label>
+                     <input id="confirmacao1" type="text" placeholder="Sim/Não" class="campo campo-medio">
+             </div>
+    
+            <div class="grupo1">
+                <label for="obs">Observações</label>
+                <textarea id="observacao" type="text" required="" class="campo-grande" ></textarea>
+            </div>
+            <form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
+                <label>Anexar Foto para Credencial e Enviar :</label>
+                
+                <input class="button" type="file" id="fileupload" name="fname" onchange="uploadFileToServer()" /> 
+                
+            </input>
+                 
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+                    <script src="script.js"> </script>
+                    
+               
+            </form>  
+
+    </body>
+</html>

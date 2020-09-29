@@ -1,0 +1,146 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: rgb(51, 51, 51);
+	height: 9.5em;
+	color: rgb(231, 236, 241);
+	margin-bottom: 1em;
+}
+
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+.caixa{
+	position: relative;
+	width: 100%;
+	
+	margin: 0 auto;
+
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.campo-grande{
+	width: 739;
+	height: 200;
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+.grupo1{
+	
+	width: 100%;
+	padding: 20px 0px ;
+}
+
+#observacao{
+
+	margin: 0px;
+	width: 98%; 
+	height: 122px;
+}
+
+@media screen and (max-width: 480px){
+	.grupo{
+
+		 width: auto;
+	}
+
+	#observacao{
+
+		width: 210.66667px;
+	}
+	#titulo-form{
+
+		font-size: 2em;
+				
+		}
+
+}
+
